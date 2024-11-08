@@ -1,28 +1,21 @@
 package org.example;
 
-import java.util.Arrays;
-import java.util.stream.IntStream;
+import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        int[] datas = new int[10];
+        System.out.println("==프로그램 시작==");
 
-        //채우기_3개(datas, 5);
-        //나누기(datas, 2);
-        try {
-        }
-        catch ( ArrayIndexOutOfBoundsException e ) {
-            System.out.println("!!!!!!!!!!!!!!!!!!!!.");
-        }
-        catch ( ArithmeticException e ) {
-            System.out.println("0으로 나눌 수 없습니다.");
-        }
-        catch ( Exception e ) {
-            System.out.println("알 수 없는 이유로 수행되지 않았습니다.");
-        }
-        /*
+        Scanner sc = new Scanner(System.in);
 
-         */
+        System.out.println("명령어 입력 : "); //문장 입력 대기
+        String command = sc.nextLine();
 
+        System.out.println("입력된 명령어 : "); //입력값 출력
+        System.out.println(command);
+
+        sc.close();  //스캐너 종료
+
+        System.out.println("==프로그램 끝==");
     }
 }
