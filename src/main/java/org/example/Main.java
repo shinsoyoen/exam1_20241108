@@ -10,10 +10,9 @@ class Main {
         //채우기_3개(datas, 5);
         //나누기(datas, 2);
         try {
-            채우기_3개_그리고_나누기(datas, 10, 0);
         }
         catch ( ArrayIndexOutOfBoundsException e ) {
-            System.out.println("배열의 크기를 3 이상으로 늘려주세요.");
+            System.out.println("!!!!!!!!!!!!!!!!!!!!.");
         }
         catch ( ArithmeticException e ) {
             System.out.println("0으로 나눌 수 없습니다.");
@@ -30,25 +29,5 @@ class Main {
         }
     }
 
-    static void 채우기_3개_그리고_나누기(int[] datas, int a, int b) throws ArrayIndexOutOfBoundsException, ArithmeticException {
-        for ( int i = 0; i < 3; i++ ) {
-            datas[i] = a;
-        }
 
-        for ( int i = 0; i < datas.length; i++ ) {
-            datas[i] = datas[i] / b;
-        }
-    }
-
-    static void 채우기_3개(int[] datas, int value) {
-        for ( int i = 0; i < 3; i++ ) {
-            datas[i] = value;
-        }
-    }
-
-    static void 나누기(int[] datas, int a) {
-        for ( int i = 0; i < datas.length; i++ ) {
-            datas[i] = datas[i] / a;
-        }
-    }
 }
