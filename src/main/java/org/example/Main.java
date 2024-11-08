@@ -24,10 +24,5 @@ class Main {
 
          */
 
-        for ( int i = 0; i < datas.length; i++ ) {
-            System.out.println("datas[" + i +  "] : " + datas[i]);
-        }
     }
-
-
 }
