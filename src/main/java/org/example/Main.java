@@ -3,6 +3,8 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import dto.Article;
+import Util.Util;
 
 class Main {
     static List<Article> articles = new ArrayList<>();
@@ -137,16 +139,3 @@ class Main {
     }
 }
 
-class Article {
-    int id;
-    String regDate;
-    String title;
-    String body;
-
-    public Article(int id, String regDate, String title, String body) {
-        this.id = id;
-        this.regDate = regDate;
-        this.title = title;
-        this.body = body;
-    }
-}
